@@ -3,8 +3,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 section{
-    display: flex;
     margin-bottom:150px;
+}
+.flex{
+    display: flex;
 }
 .top-banner{
     background-image: url(images/top-banner.png);
@@ -17,6 +19,10 @@ section{
 h1{
     font-size: 50px;
     line-height: 45px;
+}
+h2{
+    font-size: 40px;
+    line-height: 35px; 
 }
 .top-banner img, .second-banner img{
     width: 85%;
@@ -36,4 +42,9 @@ h1{
     background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+#full-stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
 }
