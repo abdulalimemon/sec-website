@@ -48,3 +48,22 @@ h2{
     border-image: linear-gradient(180deg, blue, cyan);
     border-image-slice: 1;
 }
+#stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, orange, red);
+    border-image-slice: 1;
+}
+.item {
+    width: 40%;
+    margin: 0 4%;
+    padding: 25px 10px 30px 25px;
+    box-shadow: 10px 10px 30px grey;
+}
+.experience{
+    background-image: url(images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+footer p{
+    text-align: center;
+}
