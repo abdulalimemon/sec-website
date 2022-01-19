@@ -38,7 +38,8 @@ h2{
 .link-button{
     text-decoration: none;
     font-size: 18px;
-    color: white;padding: 10px 40px;
+    color: white;
+    padding: 10px 40px;
     border-radius: 5px;
     background-image: linear-gradient(orange, red);
 }
@@ -88,6 +89,9 @@ footer p{
     .left-half-width, .right-half-width{
         width: 100%;
     }
+    section {
+        margin-bottom: 60px;
+    }
     .container{
         flex-direction: column;
     }
@@ -99,5 +103,17 @@ footer p{
     }
     .second-banner .left-half-width{
         display: none;
+    }
+    .item {
+        width: 93%;
+        margin: 0;
+        padding: 10px 0px 10px 15px;
+        margin-bottom: 30px;
+    }
+    .box {
+        flex-direction: column;   
+    }
+    h2 {
+        line-height: 50px;
     }
 }
