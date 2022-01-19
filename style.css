@@ -3,18 +3,25 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 section{
-    margin-bottom:150px;
+    margin-bottom:150px; 
 }
-.flex{
+.container{
+    width: 90%;
     display: flex;
+    align-items: center;
+}
+.left-half-width, .right-half-width{
+    width: 50%;
+}
+.top-banner .image{
+    display: flex;
+    justify-content: flex-end;
 }
 .top-banner{
     background-image: url(images/top-banner.png);
     background-repeat: no-repeat;
-}
-.half-width{
-    width: 50%;
-    padding-left: 5%;
+    display: flex;
+    justify-content: center;
 }
 h1{
     font-size: 50px;
@@ -42,6 +49,8 @@ h2{
     background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
+    display: flex;
+    justify-content: center;
 }
 #full-stack{
     border-left: 7px solid;
@@ -63,7 +72,32 @@ h2{
     background-image: url(images/exp-bg.png);
     background-repeat: no-repeat;
     background-position: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 footer p{
     text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 688px) {
+    .left-half-width, .right-half-width{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    h1 {
+        line-height: 60px;
+    }
+    .top-banner .image {
+        justify-content: center;
+    }
+    .second-banner .left-half-width{
+        display: none;
+    }
 }
